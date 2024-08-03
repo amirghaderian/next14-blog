@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body >
-        <div className=" container w-[1536px] m-auto px-[50px] ">
+        <div className=" container w-[1100px] m-auto px-[50px] h-screen flex-col justify-between items-start ">
         <Navabar/>
         {children}
         <Footer/>

@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer components{
+  .container{
+    @apply h-[100px] flex justify-center items-center
+  }
+  .mobileMenu{
+    @apply absolute right-0 top-[100px] w-1/2 h-[calc(100vh-100px)] bg-[rebeccapurple];
+  }
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,19 +25,20 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
+    --background-start-rgb: 14, 12, 35;
     --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  color: var(--text);
+  /* background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      "rgb(var(--background-end-rgb))"
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+    background-color: #0e0c23;
 }
 a{
   text-decoration: none;

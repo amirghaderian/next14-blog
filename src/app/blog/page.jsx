@@ -1,4 +1,3 @@
-'use client';
 const BlogPage = () => {
     return (
         <div>Blog page  </div>
