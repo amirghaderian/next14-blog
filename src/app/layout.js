@@ -9,8 +9,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body >
-        <div className=" container w-[1100px] m-auto px-[50px] h-screen flex-col justify-between items-start ">
+      <body>
+        <div className=" container w-[1100px] m-auto px-[50px] h-[calc(100vh-100px)] flex-col justify-between items-start ">
         <Navabar/>
         {children}
         <Footer/>
